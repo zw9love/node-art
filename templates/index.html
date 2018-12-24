@@ -1,0 +1,14 @@
+<h1>{{user.name}}</h1>
+<ul>
+    {{each list as item i}}
+        <li>
+            <h3>name: {{item.name}}</h3>
+            <h3>age: {{item.age}}</h3>
+            <ul>
+                {{each item.list as entry i}}
+                    <li>字母: {{entry}}</li>
+                {{/each}}
+            </ul>
+        </li>
+    {{/each}}
+</ul>
